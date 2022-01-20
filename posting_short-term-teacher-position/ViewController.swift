@@ -23,6 +23,6 @@ class ViewController: UIViewController {
         @IBOutlet var detail: UILabel!
         @IBOutlet var duedate: UILabel!
     }
-
+//
 }
 
