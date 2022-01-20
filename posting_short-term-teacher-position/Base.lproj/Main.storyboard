@@ -17,21 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 공고" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utx-hl-e2e">
-                                <rect key="frame" x="185" y="62" width="45" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 공고" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utx-hl-e2e">
+                                <rect key="frame" x="184.5" y="64" width="45" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-Uq-K9D">
-                                <rect key="frame" x="28" y="172" width="366" height="690"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE4-Ag-CQt">
-                                <rect key="frame" x="45" y="114" width="85" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-IL-xbI">
+                                <rect key="frame" x="111" y="104" width="59" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <menu key="menu" id="EW0-pr-GZH">
+                                    <children>
+                                        <command title="수학" id="Lb7-0t-GO9"/>
+                                        <command title="정보컴퓨터" id="pRG-WI-26F"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="과목"/>
+                                <buttonConfiguration key="configuration" style="filled" title="과목">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE4-Ag-CQt">
+                                <rect key="frame" x="20" y="104" width="76" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <menu key="menu" id="Lhs-p5-Xpj">
                                     <children>
@@ -52,24 +59,25 @@ CA
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-IL-xbI">
-                                <rect key="frame" x="138" y="114" width="71" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <menu key="menu" id="EW0-pr-GZH">
-                                    <children>
-                                        <command title="수학" id="Lb7-0t-GO9"/>
-                                        <command title="정보컴퓨터" id="pRG-WI-26F"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="과목"/>
-                                <buttonConfiguration key="configuration" style="filled" title="과목">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                </buttonConfiguration>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-Uq-K9D">
+                                <rect key="frame" x="15" y="162" width="384" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cdp-Uq-K9D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="5rw-c6-JI5"/>
+                            <constraint firstItem="Cdp-Uq-K9D" firstAttribute="top" secondItem="HCb-IL-xbI" secondAttribute="bottom" constant="20" id="CWz-A9-Hzd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cdp-Uq-K9D" secondAttribute="trailing" constant="15" id="Euh-Te-jUi"/>
+                            <constraint firstItem="bE4-Ag-CQt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MFf-MA-xe2"/>
+                            <constraint firstItem="HCb-IL-xbI" firstAttribute="leading" secondItem="bE4-Ag-CQt" secondAttribute="trailing" constant="15" id="MWw-iZ-Hfg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cdp-Uq-K9D" secondAttribute="bottom" constant="15" id="U3p-jI-oow"/>
+                            <constraint firstItem="Utx-hl-e2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ufg-XN-J5j"/>
+                            <constraint firstItem="HCb-IL-xbI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="UlH-t4-Qq6"/>
+                            <constraint firstItem="Utx-hl-e2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9D-63-PHk"/>
+                            <constraint firstItem="bE4-Ag-CQt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="gKs-zu-M30"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
