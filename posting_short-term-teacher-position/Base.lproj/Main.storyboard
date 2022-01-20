@@ -23,8 +23,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-IL-xbI">
-                                <rect key="frame" x="111" y="104" width="59" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-IL-xbI">
+                                <rect key="frame" x="208" y="103" width="59" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <menu key="menu" id="EW0-pr-GZH">
                                     <children>
@@ -59,22 +60,34 @@ CA
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-Uq-K9D">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-Uq-K9D">
                                 <rect key="frame" x="15" y="162" width="384" height="685"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00m-uN-dXU">
+                                <rect key="frame" x="119" y="104" width="66" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <menu key="menu" id="vxh-JY-0MA">
+                                    <children>
+                                        <command title="경기도 수원시" id="RX2-eM-q60"/>
+                                        <command title="경기도 화성시" id="R7V-0A-Q6w"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="지역"/>
+                                <buttonConfiguration key="configuration" style="filled" title="지역">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Cdp-Uq-K9D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="5rw-c6-JI5"/>
-                            <constraint firstItem="Cdp-Uq-K9D" firstAttribute="top" secondItem="HCb-IL-xbI" secondAttribute="bottom" constant="20" id="CWz-A9-Hzd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cdp-Uq-K9D" secondAttribute="trailing" constant="15" id="Euh-Te-jUi"/>
                             <constraint firstItem="bE4-Ag-CQt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MFf-MA-xe2"/>
-                            <constraint firstItem="HCb-IL-xbI" firstAttribute="leading" secondItem="bE4-Ag-CQt" secondAttribute="trailing" constant="15" id="MWw-iZ-Hfg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cdp-Uq-K9D" secondAttribute="bottom" constant="15" id="U3p-jI-oow"/>
                             <constraint firstItem="Utx-hl-e2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ufg-XN-J5j"/>
-                            <constraint firstItem="HCb-IL-xbI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="UlH-t4-Qq6"/>
                             <constraint firstItem="Utx-hl-e2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9D-63-PHk"/>
                             <constraint firstItem="bE4-Ag-CQt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="gKs-zu-M30"/>
                         </constraints>

@@ -13,7 +13,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    class Posting {
+        var title: String
+        var detail: String
+        var duedate: String
+    }
+    class PostingCell {
+        @IBOutlet var title: UILabel!
+        @IBOutlet var detail: UILabel!
+        @IBOutlet var duedate: UILabel!
+    }
 
 }
 
